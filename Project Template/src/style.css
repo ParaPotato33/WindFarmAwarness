@@ -11,16 +11,21 @@ h1 {
     text-black-arial;
 }
 input{
-    border-radius: 40px;
-    border: 0;
+    
+    border: thick;
     font-size: 1.5rem;
     font-weight 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    --text-color: black;
-
+    margin: 1rem 1;
+    padding: 3rem 3rem;
+    appearance: none;
+    background-color: darkblue; 
+    border-color: black;
+    
+    text-black-arial;
+    float: left;
+    display: inline;
 }
-.button--primary{
-    background: blue;
 
-}
+
+
+
