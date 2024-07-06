@@ -12,7 +12,7 @@ input {
     font-size: 60px;
     font-weight 60;
    
-    padding: 1% 5%;
+    padding: 1% 11.5%;
     appearance: none;
     background-color: rgb(56, 54, 166);
     text-black-arial;
@@ -25,7 +25,9 @@ input {
     
 }
 
-
+ul{
+    padding: 0px;
+}
 
 
 rgb(19, 17, 168)
