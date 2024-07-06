@@ -63,3 +63,7 @@ p{
 .windImage {
     padding: 40px 0px;
 }
+
+.form, label, input{
+    font-size: 300%;
+}

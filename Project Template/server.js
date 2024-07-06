@@ -1,20 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-///Request Templaye
-/* else if (req.url === '/') {
-    fs.readFile('src/index.html', (err, data) => {
-        if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Internal server error');
-        } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(data);
-        }
-    });
-} */
-
-
+// Create an HTTP server that will respond to all requests
 var server = http.createServer(function (req, res) {
     if (req.method === 'POST') {
         var body = '';
@@ -47,7 +34,18 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
-    } else if (req.url === '/src/style.css') {
+    } else if (req.url === '/Subscribe.html') {
+        fs.readFile('src/Subscribe.html', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'text/html' });
+                res.end(data);
+            }
+        });
+    }
+     else if (req.url === '/src/style.css') {
         fs.readFile('src/style.css', (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
@@ -128,13 +126,14 @@ var server = http.createServer(function (req, res) {
             }
         });
     }
+    // Add an else statement to handle requests for URLs that are not handled by the server
     else {
         console.log(req.url + ' not found');
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('Not found');
     } 
 });
-
+// Listen on port 3000
 server.listen(3000);
-
+// Log a message to the console to indicate that the server is running
 console.log('Server running at http://localhost:3000/');

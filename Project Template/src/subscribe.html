@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Website Template</title>
+        <!-- Add a title to the page -->
+        <title>Wind Farm Awareness</title>
+        <!-- Add a link to the CSS and JS file -->
         <link rel="stylesheet" type="text/css" href="src/style.css">
         <script src="src/script.js"></script>
     </head>
     <body>
         <header>
+            <!-- Add a navigation bar with three buttons -->
             <ul>
-                <input class="selected" type="button" value="Home" onclick="window.location.href='/'"></input>
+                <input class="menu" type="button" value="Home" onclick="window.location.href='/'"></input>
                 <input class="menu" type="button" value="Data" onclick="window.location.href='Data.html'"></input>
-                <input class="menu" type="button" value="Subscribe" onclick="window.location.href='src/Subscribe.html'"></input>
+                <input class="selected" type="button" value="Subscribe" onclick="window.location.href='Subscribe.html'"></input>
             </ul>
         </header>
+        <!-- Add a header with the title of the section -->
+        <h1>Subscribe</h1>
+        <!-- Add a form to subscribe to updates -->
+        <h2>Subscribe to receive updates on the following topics: </h2>
+        <form id="form">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="checkbox" id="WildlifeSurveys" name="WildlifeSurveys" value="WildlifeSurveys">
+            <label for="vehicle1"> Wildlife Surveys</label><br>
+            <input type="checkbox" id="Emissions" name="Emissions" value="Emissions">
+            <label for="vehicle2"> Emissions</label><br>
+            <input type="checkbox" id="GeophysicalSurveys" name="GeophysicalSurveys" value="GeophysicalSurveys">
+            <label for="vehicle3"> Geophysical Surveys</label><br>
+            <input type="checkbox" id="ConstructionMonitoring" name="ConstructionMonitoring" value="ConstructionMonitoring">
+            <label for="vehicle3"> Construction Monitoring</label><br>
+            <input type="button" value="Submit" onclick="clearTable()">
+        </form>
     </body>
 </html>
