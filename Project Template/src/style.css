@@ -36,6 +36,20 @@ h1 {
     outline-width: 2px;
 }
 
+.selected {
+    font-size: 60px;
+    font-weight: 60;
+   
+    padding: 1% 10%;
+    appearance: none;
+    background-color: rgb(19, 17, 168);
+    text-black-arial;
+    float: left;
+    display: block;
+    outline: solid;
+    outline-width: 2px;
+}
+
 ul{
     padding: 0px;
 }
