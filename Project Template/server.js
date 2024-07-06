@@ -77,7 +77,17 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
-    } 
+    } else if (req.url === '/Assets/Environmental.png') {
+        fs.readFile('Assets/Environmental.png', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'application/javascript' });
+                res.end(data);
+            }
+        });
+    }
     else {
         console.log(req.url + ' not found');
         res.writeHead(200, { 'Content-Type': 'text/plain' });
