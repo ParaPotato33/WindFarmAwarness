@@ -117,6 +117,16 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
+    } else if (req.url === '/Assets/WindFarm.jpg') {
+        fs.readFile('Assets/WindFarm.jpg', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'image/jpeg' });
+                res.end(data);
+            }
+        });
     }
     else {
         console.log(req.url + ' not found');

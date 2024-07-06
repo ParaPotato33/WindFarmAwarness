@@ -56,4 +56,10 @@ p{
     appearance: none;
     text-black-arial;
     outline-width: 2px;
+    width: 70%;
+    float: left;
+}
+
+.windImage {
+    padding: 40px 0px;
 }
