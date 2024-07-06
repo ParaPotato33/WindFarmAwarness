@@ -8,9 +8,9 @@
     <body>
         <header>
             <ul>
-                <input type="button" value="Home" onclick="window.location.href='/'"></input>
-                <input type="button" value="Data" onclick="window.location.href='Data.html'"></input>
-                <input type="button" value="Subscribe" onclick="window.location.href='src/Subscribe.html'"></input>
+                <input class="menu" type="button" value="Home" onclick="window.location.href='/'"></input>
+                <input class="selected" type="button" value="Data" onclick="window.location.href='Data.html'"></input>
+                <input class="menu" type="button" value="Subscribe" onclick="window.location.href='src/Subscribe.html'"></input>
             </ul>
         </header>
         <h1>Data</h1>
@@ -21,7 +21,7 @@
             <option value="3">Emissions</option>
             <option value="4">Construction Monitoring</option>
         </select>
-        <input type="button" value="Interactive Map" onclick="MapLink()"><br>
+        <input class="map" type="button" value="Interactive Map" onclick="MapLink()"><br>
         <img src="Assets/EnvironmentalSurveys.png" alt="Map" id="Map">
     </body>
 </html>
