@@ -4,3 +4,7 @@ async function test(){
     .then(response => response.json())
     .then(data => console.log(data));
 }
+
+function MapLink(){
+    window.location.href = 'https://www.marinedataexchange.co.uk/search';
+}
