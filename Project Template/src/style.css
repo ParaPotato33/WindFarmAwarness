@@ -8,8 +8,12 @@
 h1 {
     text-black-arial;
     font-size: 80px;
+    border: 0px;
 }
 
+:buttonRoot{
+
+}
 .menu {
 
     font-size: 60px;
@@ -26,14 +30,14 @@ h1 {
 }
 
 .map {
-    font-size: 60px;
+    font-size: 20px;
     font-weight: 60;
    
-    padding: 1% 10%;
+    padding: 20px 170px;
     appearance: none;
     background-color: rgb(56, 54, 166);
     text-black-arial;
-    float: left;
+   
     display: block;
     outline: solid;
     outline-width: 2px;
