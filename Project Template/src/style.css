@@ -5,56 +5,44 @@
     --text-color: black;
     --font-family: Arial, sans-serif;
 }
+/*creates an identity that the whole website will use to set font and font colour */
 h1 {
     text-black-arial;
     font-size: 80px;
     border: 0px;
-}
+}/*sets the title properties of the home page */
 
-:buttonRoot{
 
-}
+:buttonRoot {
+    font-weight: 60;
+    appearance: none;
+    text-black-arial;
+    display: block;
+    outline: solid;
+    outline-width: 2px;
+}/* sets a base indentity that all the buttons will use for their properties */
 .menu {
 
     font-size: 60px;
-    font-weight: 60;
-   
     padding: 1% 10%;
-    appearance: none;
     background-color: rgb(56, 54, 166);
-    text-black-arial;
     float: left;
-    display: block;
-    outline: solid;
-    outline-width: 2px;
-}
+    buttonRoot;
+}/* Sets the properties of the menu buttons(Home,Subscribe,Data) */
 
 .map {
     font-size: 20px;
-    font-weight: 60;
-   
     padding: 20px 170px;
-    appearance: none;
     background-color: rgb(56, 54, 166);
-    text-black-arial;
-   
-    display: block;
-    outline: solid;
-    outline-width: 2px;
-}
+    buttonRoot;
+}/* Sets the propertiesof the map button */
 
 .selected {
     font-size: 60px;
-    font-weight: 60;
-   
     padding: 1% 10%;
-    appearance: none;
     background-color: rgb(19, 17, 168);
-    text-black-arial;
     float: left;
-    display: block;
-    outline: solid;
-    outline-width: 2px;
+    buttonRoot;
 }
 
 ul{
