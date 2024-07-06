@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+
+:text-black-arial {
+    --text-color: black;
+    --font-family: Arial, sans-serif;
 }
+h1 {
+    text-black-arial;
+}
+.button{
+    color:darkblue;
+    display:block;
+    font-display:block;
+    
+}
+
