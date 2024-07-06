@@ -7,22 +7,21 @@
     </head>
     <body>
         <header>
-            <h1>Data</h1>
             <ul>
                 <input type="button" value="Home" onclick="window.location.href='/'"></input>
                 <input type="button" value="Data" onclick="window.location.href='Data.html'"></input>
                 <input type="button" value="Subscribe" onclick="window.location.href='src/Subscribe.html'"></input>
             </ul>
+            <h1>Data</h1>
         </header>
         <h2>Environmental Surveys</h2>
-        <select>
+        <select id="survey">
             <option value="1">Wildlife Surveys</option>
-            <option value="2">Survey 2</option>
-            <option value="3">Survey 3</option>
-            <option value="4">Survey 4</option>
+            <option value="2">Geophysical Surveys</option>
+            <option value="3">Emissions</option>
+            <option value="4">Construction Monitoring</option>
         </select>
-        <li id="mapLink"><a href="https://www.marinedataexchange.co.uk/search?searchQuery=wildlife%20surveys">Interactice Map</a></li>
         <input type="button" value="Interactive Map" onclick="MapLink()"><br>
-        <img src="Assets/Environmental.png" alt="Map" id="Map">
+        <img src="Assets/EnvironmentalSurveys.png" alt="Map" id="Map">
     </body>
 </html>

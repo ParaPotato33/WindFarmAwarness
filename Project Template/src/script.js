@@ -6,5 +6,8 @@ async function test(){
 }
 
 function MapLink(){
-    window.location.href = 'https://www.marinedataexchange.co.uk/search';
+    var survey = document.getElementById('survey').options[document.getElementById('survey').selectedIndex].text;
+    survey = survey.replace(/ /g, '%20');
+    console.log(survey);
+    window.open('https://www.marinedataexchange.co.uk/search?site%2Fsector=Wind&searchQuery=' + survey);
 }
