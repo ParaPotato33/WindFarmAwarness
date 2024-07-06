@@ -2,6 +2,28 @@
     box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+
+:text-black-arial {
+    --text-color: black;
+    --font-family: Arial, sans-serif;
 }
+h1 {
+    text-black-arial;
+}
+.button-box {
+    border: var(--l1);
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+    .button-box:hover {
+        background-color: #e0e0e0;
+    }
+
