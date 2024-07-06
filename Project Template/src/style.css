@@ -8,11 +8,15 @@
 h1 {
     text-black-arial;
 }
+<<<<<<< HEAD
 :input {
+=======
+.menu {
+>>>>>>> 1e7f25f4ae840e8b385830ff425490b33181f984
     font-size: 60px;
-    font-weight 60;
+    font-weight: 60;
    
-    padding: 1% 11.5%;
+    padding: 1% 10%;
     appearance: none;
     background-color: rgb(56, 54, 166);
     text-black-arial;
@@ -20,9 +24,34 @@ h1 {
     display: block;
     outline: solid;
     outline-width: 2px;
-    
-    
-    
+}
+
+.map {
+    font-size: 60px;
+    font-weight: 60;
+   
+    padding: 1% 10%;
+    appearance: none;
+    background-color: rgb(56, 54, 166);
+    text-black-arial;
+    float: left;
+    display: block;
+    outline: solid;
+    outline-width: 2px;
+}
+
+.selected {
+    font-size: 60px;
+    font-weight: 60;
+   
+    padding: 1% 10%;
+    appearance: none;
+    background-color: rgb(19, 17, 168);
+    text-black-arial;
+    float: left;
+    display: block;
+    outline: solid;
+    outline-width: 2px;
 }
 
 ul{
