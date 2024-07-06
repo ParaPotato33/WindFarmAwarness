@@ -37,6 +37,16 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
+    } else if (req.url === '/src/Data.html') {
+        fs.readFile('src/Data.html', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'text/html' });
+                res.end(data);
+            }
+        });
     } else if (req.url === '/src/style.css') {
         fs.readFile('src/style.css', (err, data) => {
             if (err) {
