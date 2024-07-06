@@ -15,13 +15,13 @@
         </header>
         <h1>Data</h1>
         <h2>Environmental Surveys</h2>
-        <select id="survey">
-            <option value="1" onclick="mapImage('wildlifesurveys')">Wildlife Surveys</option>
-            <option value="2" onclick="mapImage('GeophysicalSurveys')">Geophysical Surveys</option>
-            <option value="3" onclick="mapImage('emissions')">Emissions</option>
-            <option value="4" onclick="mapImage('constructionmonitoring')">Construction Monitoring</option>
+        <select id="survey" onchange="mapImage()">
+            <option value="1">Wildlife Surveys</option>
+            <option value="2">Geophysical Surveys</option>
+            <option value="3">Emissions</option>
+            <option value="4">Construction Monitoring</option>
         </select>
         <input class="map" type="button" value="Interactive Map" onclick="MapLink()"><br>
-        <img alt="Map" id="Map">
+        <img src="Assets/WildlifeSurveys.png" alt="Map" id="Map">
     </body>
 </html>

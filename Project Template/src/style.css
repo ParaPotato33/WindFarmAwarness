@@ -61,4 +61,11 @@ ul{
     padding: 0px;
 }
 
-
+p{
+    font-size: 20px;
+    font-weight: 60;
+    padding: 20px 20px;
+    appearance: none;
+    text-black-arial;
+    outline-width: 2px;
+}

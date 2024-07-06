@@ -77,8 +77,38 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
-    } else if (req.url === '/Assets/EnvironmentalSurveys.png') {
-        fs.readFile('Assets/EnvironmentalSurveys.png', (err, data) => {
+    } else if (req.url === '/Assets/WildlifeSurveys.png') {
+        fs.readFile('Assets/WildlifeSurveys.png', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'image/png' });
+                res.end(data);
+            }
+        });
+    } else if (req.url === '/Assets/Emissions.png') {
+        fs.readFile('Assets/Emissions.png', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'image/png' });
+                res.end(data);
+            }
+        });
+    } else if (req.url === '/Assets/GeophysicalSurveys.png') {
+        fs.readFile('Assets/GeophysicalSurveys.png', (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Internal server error');
+            } else {
+                res.writeHead(200, { 'Content-Type': 'image/png' });
+                res.end(data);
+            }
+        });
+    } else if (req.url === '/Assets/ConstructionMonitoring.png') {
+        fs.readFile('Assets/ConstructionMonitoring.png', (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Internal server error');

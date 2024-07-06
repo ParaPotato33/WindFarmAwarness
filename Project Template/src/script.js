@@ -12,8 +12,10 @@ function MapLink(){
     window.open('https://www.marinedataexchange.co.uk/search?site%2Fsector=Wind&searchQuery=' + survey);
 }
 
-function mapImage(image) {
+function mapImage() {
+    var image = document.getElementById('survey').options[document.getElementById('survey').selectedIndex].text;
     console.log(image);
+    image = image.replace(/ /g, '');
     var img = document.getElementById('Map');
     img.src = 'Assets/' + image + '.png';
 }
