@@ -37,7 +37,7 @@ var server = http.createServer(function (req, res) {
                 res.end(data);
             }
         });
-    } else if (req.url === '/src/Data.html') {
+    } else if (req.url === '/Data.html') {
         fs.readFile('src/Data.html', (err, data) => {
             if (err) {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
