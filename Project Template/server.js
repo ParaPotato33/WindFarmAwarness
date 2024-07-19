@@ -1,9 +1,11 @@
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
+const mime = require('mime-types');
 
 // Create an HTTP server that will respond to all requests
 var server = http.createServer(function (req, res) {
-    if (req.method === 'POST') {
+    /* if (req.method === 'POST') {
         var body = '';
 
         req.on('end', function() {
@@ -132,6 +134,38 @@ var server = http.createServer(function (req, res) {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('Not found');
     } 
+}); */
+    const filePath = path.join(__dirname, req.url);
+    
+    fs.readFile(filePath, (err, content) => {
+        if (req.url === '/') {
+            fs.readFile('src/index.html', (err, data) => {
+                if (err) {
+                    res.writeHead(500, { 'Content-Type': 'text/plain' });
+                    res.end('Internal server error');
+                } else {
+                    res.writeHead(200, { 'Content-Type': 'text/html' });
+                    res.end(data);
+                }
+            });
+        }
+
+        else if (err) {
+            console.log(filePath);
+            if (err.code == 'ENOENT') {
+                res.writeHead(404, { 'Content-Type': 'text/plain' });
+                res.end('404 Not Found');
+            } else {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('500 Server Error');
+            }
+        } else {
+            const contentType = mime.contentType(path.extname(filePath)) || 'text/plain';
+
+            res.writeHead(200, { 'Content-Type': contentType });
+            res.end(content);
+        }
+    })
 });
 // Listen on port 3000
 server.listen(3000);
