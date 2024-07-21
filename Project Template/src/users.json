@@ -1,1 +1,1 @@
-{"users": [{"username":"Adam","password":"Russell","filters":["Research","Engineering"]},{"username":"John","password":"Smith","filters":[]}]}
+{"users": [{"username":"Adam","password":"Russell","filters":["Research","Engineering"]},{"username":"John","password":"Smith","filters":["Research"]},{"username":"John","password":"Smith","filters":["Research"]}]}
