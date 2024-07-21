@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Add a title to the page -->
+        <title>Wind Farm Awareness</title>
+        <!-- Add a link to the CSS and JS file -->
+        <link rel="stylesheet" type="text/css" href="/src/style.css">
+        <script src="/src/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Add a header with the title of the website -->
+            <h1>Wind Farm Awareness</h1>
+        </header>
+
+        <!-- Add a navigation bar with three buttons -->
+        <ul class="NavBar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/src/MyNews.html">My News</a></li>
+            <li class="active" style="float: right;"><a href="/src/login.html">Login</a></li>
+        </ul>
+        <!-- Add a form to subscribe to updates -->
+        <h2 style="text-align: center;">Login or Sign Up to Filter your Results: </h2>
+        <form id="form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Username..."><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Password..."><br><br>
+            <input type="button" value="Login" onclick="login()"><br><br>
+            <input type="button" value="Sign Up" onclick="signup()">
+        </form>
+    </body>
+</html>

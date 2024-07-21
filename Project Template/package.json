@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

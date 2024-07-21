@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Add a title to the page -->
+        <title>Wind Farm Awareness</title>
+        <!-- Add a link to the CSS and JS file -->
+        <link rel="stylesheet" type="text/css" href="/src/style.css">
+        <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+        <!--script type="module" src="src/news.js"></script-->
+        <script type="module" src="/src/mynews.js"></script>
+        <script src="/src/script.js"></script>
+        
+    </head>
+    <body onload="userChecker()">
+        <header>
+            <!-- Add a header with the title of the website -->
+            <h1>Wind Farm Awareness</h1>
+        </header>
+
+        <!-- Add a navigation bar with three buttons -->
+        <ul class="NavBar">
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="/src/MyNews.html">My News</a></li>
+            <li style="float: right;"><a href="/src/login.html">Login</a></li>
+        </ul>
+        
+        <h2 id="welcome"></h2>
+
+        <!-- Add a paragraph with a brief description of the website -->
+        <section>
+            <h3>This page contains a filtered set on recent news based on your filtered selection. Select configure if you would like to change your selection or return to the home page to view an unfiltered list!</h3>
+        </section>
+
+        <section id="configure">
+            <input type="button" value="Configure" onclick="configure()">
+        </section>
+
+        <section>
+            <h2>Latest News</h2>
+        </section>
+
+        <section id="splide" class="splide">
+            <div class="splide__track">
+                <ul id="news-list" class="splide__list">
+                </ul>
+            </div>
+        </section>
+
+    </body>
+</html>
