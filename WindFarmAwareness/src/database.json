@@ -1,0 +1,44 @@
+{"news":[
+    {
+        "title":"2023, The Crown Estate, Marine Data Exchange, Data Valuation Report", 
+        "development":"MDE Documentation", 
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Research/Tidal%2010.jpg",
+        "description":"This report looks at how the MDE not only safeguards project level survey data and research, but also showcases how valuable it is to have this data collated in one place, where insights and evidence gaps can be assessed at an influential scale. The findings have been segmented into relevant financial, environmental and social parameters using case studies from existing wind farms, and value chains. This assessment demonstrates that the value of available data comes from their interconnectivity and applicability, which will also increase with time as more uses become available.",
+        "catagories":["Research"]
+    }, 
+    {
+        "title":"2024, University of Exeter, The Crown Estate Research, The Social Impact of Marine Developments", 
+        "development":"The Crown Estate Research", 
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Research/GN%206.jpeg",
+        "description":"The University of Exeter has completed a scoping review of evidence on the social impacts of marine sectors on coastal communities, on behalf of The Crown Estate. The review was led by Dr Pamela Buchan, an interdisciplinary marine scientist in the University of Exeter Geography Department and ACCESS Network (https://accessnetwork.uk/) Leadership College Fellow. Dr Buchan’s study finds that marine development in the UK and internationally is not currently sufficiently considering the wide range of social impacts for coastal communities. Research is dominated by efforts to generate acceptance of developments, whilst existing practices are focused on job creation, skills development, and grant giving through community benefit schemes. This is strongly influenced by a lack of regulation that requires offshore sectors to consider, evidence, and monitor social impacts at all stages of marine development, with practices such as Environmental Impact Assessment often scoping out coastal community impacts for activities taking place at sea. The report gives a substantial set of recommendations aimed at research, specific marine sectors, and company level actions and regulation. It calls for systematic review of social impact assessment across marine sectors.",
+        "catagories":["Research"]
+    }, 
+    {
+        "title":"2023, The Carbon Trust and Frazer-Nash Consultancy, Guidance on Power Density for Floating Offshore Wind Farms", 
+        "development":"The Crown Estate - Technical Data and Evidence Programme", 
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Engineering%20Design/31%20August%202016_EDFs_Blyth%20offshore%20wind%20demo-Concrete%20Gravity%20Base%20Foundation%20construction-Neptune%20dry%20dock%20R%20Tyne.jpg",
+        "description":"This report summarises a literature review, stakeholder engagement exercise and technical modelling aimed at better understanding the relationship between power density/inter-turbine spacing and fatigue loading for floating offshore wind turbines.",
+        "catagories":["Engineering", "Research"]
+    },
+    {
+        "title":"2023, The Crown Estate, Marine Data Exchange, Impact Report",
+        "development":"MDE Documentation",
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Other/JasonHawkes-6173.jpg",
+        "description":"The Marine Data Exchange Impact report was created by The Crown Estate, with collaboration from our customers and stakeholders, to showcase the role of the platform in supporting the UK’s net zero and biodiversity targets. The report celebrates our partners who continue to deliver data and explores the history, impact and value of the Marine Data Exchange, whilst shining a light on organisations and individuals that have used the data hosted on the Marine Data Exchange to inform their work.",
+        "catagories":["Research", "Other"]
+    },
+    {
+        "title":"2023, Frazer-Nash Consultancy, Floating Offshore Wind Farms, Array Layout Yield Study",
+        "development":"The Crown Estate - Technical Data and Evidence Programme",
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Research/GN%202.jpg",
+        "description":"This report summarises an investigation into the impact of offshore wind farm design parameters (power density and inter-array spacing) on energy yield for generic projects, using the TurbOPark wake model.",
+        "catagories":["Engineering", "Research"]
+    },
+    {
+        "title":"2023, The Crown Estate, Marine Internships, Marine Net Gain Project Pipeline",
+        "development":"Marine Internships",
+        "img":"https://www.marinedataexchange.co.uk/pub/thumb/Environmental%20Statements/shipfromabove.png",
+        "description":"This project was hosted by Lincolnshire Wildlife Trust with the help of the partner organisations, The Crown Estate, Ørsted and Natural England. The report includes recommendations on the potential interventions a developer could use, as inspiration for their future Net Gain projects. With the continued decline in marine biodiversity in the UK’s waters, there has been an increasing recognition for the importance of greater restoration action to the marine environment. To deliver the British Energy Security Strategy and meet the UK’s ambitious targets for net zero, the numbers of marine developments are likely to significantly increase in the coming years, particularly in relation to offshore wind. Defra’s 25 Year Environment Plan commits to putting the marine environment in recovery, and it is vital that nature recovery is embedded within development at sea. An important tool to meeting UK energy targets and delivering ocean recovery is the implementation of Marine Net Gain in policy. The UK Government intends to make Marine Net Gain a mandatory requirement for all new developments in English waters below the mean low water mark. It is an exciting and emerging area of marine policy. Net gain is an approach to development that aims to leave the natural environment in a measurably better state than beforehand. This means protecting, restoring, or creating environmental features that are of greater ecological value to wildlife, habitats and people than any losses associated with the original project (Defra, 2022). The requirements for Marine Net Gain are still being decided.",
+        "catagories":["Research", "Environmental"]
+    }
+    ]}
